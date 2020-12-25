@@ -32,7 +32,7 @@ function showNews(param) {
             let newsHtml = '';
             for (key in articles) {
                 if (articles[key].content == null) {
-                    break;
+                    continue;
                 }
                 let news = `<div class="card">
                             <div class="card-header" id="heading${key}">
